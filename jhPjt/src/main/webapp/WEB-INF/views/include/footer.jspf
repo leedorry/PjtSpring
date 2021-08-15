@@ -1,0 +1,114 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+	
+		<!-- Footer Section Starts -->
+		<footer id="footer-area">
+		<!-- Footer Links Starts -->
+			<div class="footer-links text-xs-center">
+			<!-- Container Starts -->
+				<div class="container">
+				<!-- Nested Row Starts -->
+					<div class="row">
+					<!-- Foot Col#1 Starts -->
+						<div class="col-lg-4 col-sm-12">
+							<h5>Subscription</h5>
+							<div class="foot-subscription-form">
+								<div class="input-group">
+								  <input type="text" class="form-control text-uppercase" placeholder="Your Email Address">
+								  <span class="input-group-btn">
+									<button class="btn text-uppercase" type="button">
+										Subscribe
+									</button>
+								  </span>
+								</div>
+							</div>
+							<h5>Stay Connected</h5>
+							<ul class="list-unstyled list-inline foot-sm-links">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							</ul>
+						</div>
+					<!-- Foot Col#1 Ends -->
+					<!-- My Account Starts -->
+						<div class="col-lg-2 col-sm-4 col-12">
+							<h5>My Account</h5>
+							<ul>
+								<li><a href="#">My orders</a></li>
+								<li><a href="#">My merchandise returns</a></li>
+								<li><a href="#">My credit slips</a></li>
+								<li><a href="#">My addresses</a></li>
+								<li><a href="#">My personal info</a></li>
+							</ul>
+						</div>
+					<!-- My Account Ends -->
+					<!-- Customer Service Starts -->
+						<div class="col-lg-2 col-sm-4 col-12">
+							<h5>Customer Service</h5>
+							<ul>
+								<li><a href="contact.html">Contact Us</a></li>
+								<li><a href="#">Returns</a></li>
+								<li><a href="#">Site Map</a></li>
+								<li><a href="#">Affiliates</a></li>
+								<li><a href="#">Specials</a></li>
+							</ul>
+						</div>
+					<!-- Customer Service Ends -->
+					<!-- Contact Us Starts -->
+						<div class="col-sm-4 col-12 last">
+							<h5>Contact Us</h5>
+							<ul>
+								<li>My Company</li>
+								<li>
+									1247 LB Nagar Road, Hyderabad, Telangana - 35
+								</li>
+								<li>
+									Email: <a href="#">info@demolink.com</a>
+								</li>								
+							</ul>
+							<h4 class="lead">
+								Tel: <span>1(234) 567-9842</span>
+							</h4>
+						</div>
+					<!-- Contact Us Ends -->
+					</div>
+				<!-- Nested Row Ends -->
+				</div>
+			<!-- Container Ends -->
+			</div>
+		<!-- Footer Links Ends -->
+		<!-- Copyright Area Starts -->
+			<div class="copyright">
+			<!-- Container Starts -->
+				<div class="container clearfix">
+				<!-- Starts -->
+					<p class="float-left">
+						&copy; 2018 Food Bingo Stores. Designed By <a href="http://sainathchillapuram.com">Sainath Chillapuram</a>
+					</p>
+				<!-- Ends -->
+				<!-- Payment Gateway Links Starts -->
+					<ul class="float-right list-inline">
+						<li class="list-inline-item"><img src="images/payment-icon/cirrus.png" alt="PaymentGateway" /></li>
+						<li class="list-inline-item"><img src="images/payment-icon/paypal.png" alt="PaymentGateway" /></li>
+						<li class="list-inline-item"><img src="images/payment-icon/visa.png" alt="PaymentGateway" /></li>
+						<li class="list-inline-item"><img src="images/payment-icon/mastercard.png" alt="PaymentGateway" /></li>
+						<li class="list-inline-item"><img src="images/payment-icon/americanexpress.png" alt="PaymentGateway" /></li>
+					</ul>
+				<!-- Payment Gateway Links Ends -->
+				</div>
+			<!-- Container Ends -->
+			</div>
+		<!-- Copyright Area Ends -->
+		</footer>
+	<!-- Footer Section Ends -->
+	<!-- Template JS Files -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/custom.js"></script>	
+	</body>
+</html>
