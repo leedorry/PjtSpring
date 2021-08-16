@@ -6,7 +6,7 @@
 	    <div class="main-banner">
         <!-- Nested Container Starts -->
             <div class="container">
-                <h1 class="text-uppercase">Register</h1>
+                <h1 class="text-uppercase">회원 가입</h1>
                 <h2>As safe as possible !</h2>
             </div>
         <!-- Nested Container Ends -->
@@ -39,131 +39,70 @@
                             </div>
                             <div class="panel-body">
                             <!-- Registration Form Starts -->
-                                <form>
+                                <form action="/user/registerPost">
                                 <!-- Personal Information Starts -->
                                     <div class="form-group row">
-                                        <label for="inputFname" class="col-sm-3 col-form-label text-right">First Name :</label>
+                                        <label for="inputFname" class="col-sm-3 col-form-label text-right">아이디 : </label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputFname" placeholder="First Name">
+                                            <input type="text" class="form-control" id="userId" name="userId" placeholder="아이디">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="inputLname" class="col-sm-3 col-form-label text-right">Last Name :</label>
+                                        <label for="inputLname" class="col-sm-3 col-form-label text-right">비밀번호 : </label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputLname" placeholder="Last Name">
+                                            <input type="password" class="form-control" id="password" name="password" placeholder="비밀번호">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="inputEmail" class="col-sm-3 col-form-label text-right">Email :</label>
+                                        <label for="inputEmail" class="col-sm-3 col-form-label text-right">비밀번호 확인 : </label>
                                         <div class="col-sm-9">
-                                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                            <input type="password" class="form-control" id="Repassword" name="Repassword" placeholder="비밀번호 확인">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="inputPhone" class="col-sm-3 col-form-label text-right">Phone :</label>
+                                        <label for="inputPhone" class="col-sm-3 col-form-label text-right">이름 : </label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputPhone" placeholder="Phone">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="이름">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="inputFax" class="col-sm-3 col-form-label text-right">Fax :</label>
+                                        <label for="inputFax" class="col-sm-3 col-form-label text-right">생년월일 :</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputFax" placeholder="Fax">
-                                        </div>
-                                    </div>
-                                <!-- Personal Information Ends -->
-                                    <h3 class="panel-heading inner">
-                                        Delivery Information
-                                    </h3>
-                                <!-- Delivery Information Starts -->
-                                    <div class="form-group row">
-                                        <label for="inputCompany" class="col-sm-3 col-form-label text-right">Company :</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputCompany" placeholder="Company">
+                                            <input type="text" class="form-control" id="birth" name="birth" placeholder="생년월일">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="inputCompanyId" class="col-sm-3 col-form-label text-right">Company ID :</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputCompanyId" placeholder="Company ID">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="inputAddress1" class="col-sm-3 col-form-label text-right">Address/1 :</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputAddress1" placeholder="Address/1">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="inputAddress2" class="col-sm-3 col-form-label text-right">Address/2 :</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputAddress2" placeholder="Address/2">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="inputCity" class="col-sm-3 col-form-label text-right">City :</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputCity" placeholder="City">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="inputPostCode" class="col-sm-3 col-form-label text-right">Postal Code :</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputPostCode" placeholder="Postal Code">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="inputCountry" class="col-sm-3 col-form-label text-right">Country :</label>
-                                        <div class="col-sm-9">
-                                            <select class="form-control" id="inputCountry">
-                                                <option>- All Countries -</option>
-                                                <option>India</option>
-                                                <option>USA</option>
-                                                <option>UK</option>
-                                                <option>China</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="inputRegion" class="col-sm-3 col-form-label text-right">Region :</label>
-                                        <div class="col-sm-9">
-                                            <select class="form-control" id="inputRegion">
-                                                <option>- All Regions -</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                <!-- Delivery Information Ends -->
-                                    <h3 class="panel-heading inner">
-                                        Password
-                                    </h3>
-                                <!-- Password Area Starts -->
-                                    <div class="form-group row">
-                                        <label for="inputPassword" class="col-sm-3 col-form-label text-right">Password :</label>
-                                        <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="inputRePassword" class="col-sm-3 col-form-label text-right">Re-Password :</label>
-                                        <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="inputRePassword" placeholder="Re-Password">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <span class="col-sm-3 col-form-label text-right">Newsletter :</span>
+                                        <span class="col-sm-3 col-form-label text-right">성별 :</span>
                                         <div class="col-sm-9">
                                             <div class="radio">
                                                 <label>
-                                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                                    Subscribe
+                                                    <input type="radio" name="gender" id="gender" value="male" checked>
+                                                    남성
                                                 </label>
                                             </div>
                                             <div class="radio">
                                                 <label>
-                                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1">
-                                                    Unsubscribe
+                                                    <input type="radio" name="gender" id="gender" value="female">
+                                                    여성
                                                 </label>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputFax" class="col-sm-3 col-form-label text-right">이메일 :</label>
+                                        <div class="col-sm-9">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="이메일">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputFax" class="col-sm-3 col-form-label text-right">닉네임 :</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="nickname" name="nickname" placeholder="닉네임">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-9">
+                                            <input type="hidden" class="form-control" id="adminchk" name="adminchk" >
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -178,7 +117,7 @@
                                     <div class="form-group row">
                                         <div class="offset-sm-3 col-sm-9">
                                             <button type="submit" class="btn btn-black">
-                                                Register
+                                                가입하기
                                             </button>
                                         </div>
                                     </div>

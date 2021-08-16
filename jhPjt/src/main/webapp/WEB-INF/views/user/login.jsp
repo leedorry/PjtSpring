@@ -41,17 +41,17 @@
                                     Please login using your existing account
                                 </p>
                             <!-- Login Form Starts -->
-                                <form class="form-inline" role="form">
+                                <form action="/user/loginPost" method="post" class="form-inline" role="form">
                                     <div class="form-group">
-                                        <label class="sr-only" for="exampleInputEmail2">Username</label>
-                                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Username">
+                                        <label class="sr-only" for="exampleInputEmail2">아이디</label>
+                                        <input type="text" class="form-control" id="userId" name="userId" placeholder="아이디">
                                     </div>
                                     <div class="form-group mx-sm-3">
-                                        <label class="sr-only" for="exampleInputPassword2">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                                        <label class="sr-only" for="exampleInputPassword2">비밀번호</label>
+                                        <input type="password" class="form-control" id="password" name="password" placeholder="비밀번호">
                                     </div>
                                     <button type="submit" class="btn btn-black">
-                                        Login
+                                        로그인
                                     </button>
                                 </form>
                             <!-- Login Form Ends -->
