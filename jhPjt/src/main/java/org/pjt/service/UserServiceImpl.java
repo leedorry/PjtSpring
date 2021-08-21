@@ -25,5 +25,15 @@ public class UserServiceImpl implements UserService {
 		userMapper.keepLogin(userId, sessionId, next);
 	}
 
+	@Override
+	public void register(UserInfo userInfo) throws Exception {
+		userMapper.register(userInfo);
+	}
+
+	@Override
+	public int idChk(LoginDTO dto) throws Exception {
+		return userMapper.idChk(dto);
+	}
+
 	
 }

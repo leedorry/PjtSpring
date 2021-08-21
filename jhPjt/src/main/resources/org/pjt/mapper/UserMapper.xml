@@ -17,4 +17,32 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		WHERE userId = #{arg0}
 	</update>
 	
+	<insert id="register">
+		INSERT INTO userInfo (
+			userNo, 
+			userId, 
+			userName, 
+			password, 
+			nickname, 
+			birth, 
+			gender, 
+			email
+		)
+		VALUES (
+			USERNUM.NEXTVAL, 
+			#{userId}, 
+			#{userName}, 
+			#{password}, 
+			#{nickname}, 
+			#{birth}, 
+			#{gender}, 
+			#{email}
+		)
+	</insert>
+	
+	<select id="idChk" resultType="int">
+		SELECT count(*)
+		FROM userInfo
+		WHERE userId = #{userId}
+	</select>
 </mapper>

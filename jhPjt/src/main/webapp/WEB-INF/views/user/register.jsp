@@ -39,30 +39,42 @@
                             </div>
                             <div class="panel-body">
                             <!-- Registration Form Starts -->
-                                <form action="/user/registerPost">
+                                <form action="${pageContext.request.contextPath}/user/registerPost" method="post" id="registFrm">
                                 <!-- Personal Information Starts -->
                                     <div class="form-group row">
                                         <label for="inputFname" class="col-sm-3 col-form-label text-right">아이디 : </label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" id="userId" name="userId" placeholder="아이디">
+                                        	<input type="button" > 중복확인
                                         </div>
+                                        
                                     </div>
                                     <div class="form-group row">
                                         <label for="inputLname" class="col-sm-3 col-form-label text-right">비밀번호 : </label>
                                         <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password" name="password" placeholder="비밀번호">
+                                            <input type="password" class="form-control pw" id="password" name="password" placeholder="비밀번호">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="inputEmail" class="col-sm-3 col-form-label text-right">비밀번호 확인 : </label>
                                         <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="Repassword" name="Repassword" placeholder="비밀번호 확인">
+                                            <input type="password" class="form-control pw" id="Repassword" name="Repassword" placeholder="비밀번호 확인">
                                         </div>
+                                        <div class="col-sm-9">
+	                                        <span id="alert-success" style="display:none;">비밀번호가 일치합니다.</span>
+	                                        <span id="alert-danger" style="display:none; color: #d92742; font-weight:bold;">비밀번호가 일치하지 않습니다.</span>
+                                    	</div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="inputPhone" class="col-sm-3 col-form-label text-right">이름 : </label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" id="name" name="name" placeholder="이름">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputFax" class="col-sm-3 col-form-label text-right">닉네임 :</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="nickname" name="nickname" placeholder="닉네임">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -92,12 +104,6 @@
                                         <label for="inputFax" class="col-sm-3 col-form-label text-right">이메일 :</label>
                                         <div class="col-sm-9">
                                             <input type="email" class="form-control" id="email" name="email" placeholder="이메일">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="inputFax" class="col-sm-3 col-form-label text-right">닉네임 :</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="nickname" name="nickname" placeholder="닉네임">
                                         </div>
                                     </div>
                                     <div class="form-group row">

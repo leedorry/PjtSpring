@@ -54,9 +54,9 @@ public class UserController {
 	}
 	
 	@RequestMapping(value="/registerPost", method = RequestMethod.POST)
-	public void registerPOST() throws Exception {
+	public void registerPOST(UserInfo userInfo) throws Exception {
 		
-		// UserInfo userInfo = userService.register()
+		userService.register(userInfo);
 	}
 
 	

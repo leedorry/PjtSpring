@@ -10,4 +10,8 @@ public interface UserMapper {
 	public UserInfo login(LoginDTO dto) throws Exception;
 	
 	public void keepLogin(String userId, String sessionId, Date next) throws Exception;
+	
+	public void register(UserInfo userInfo) throws Exception;
+	
+	public int idChk(LoginDTO dto) throws Exception;
 }

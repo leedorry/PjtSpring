@@ -90,11 +90,11 @@
 				<!-- Ends -->
 				<!-- Payment Gateway Links Starts -->
 					<ul class="float-right list-inline">
-						<li class="list-inline-item"><img src="images/payment-icon/cirrus.png" alt="PaymentGateway" /></li>
-						<li class="list-inline-item"><img src="images/payment-icon/paypal.png" alt="PaymentGateway" /></li>
-						<li class="list-inline-item"><img src="images/payment-icon/visa.png" alt="PaymentGateway" /></li>
-						<li class="list-inline-item"><img src="images/payment-icon/mastercard.png" alt="PaymentGateway" /></li>
-						<li class="list-inline-item"><img src="images/payment-icon/americanexpress.png" alt="PaymentGateway" /></li>
+						<li class="list-inline-item"><img src="${pageContext.request.contextPath}/resources/images/payment-icon/cirrus.png" alt="PaymentGateway" /></li>
+						<li class="list-inline-item"><img src="${pageContext.request.contextPath}/resources/images/payment-icon/paypal.png" alt="PaymentGateway" /></li>
+						<li class="list-inline-item"><img src="${pageContext.request.contextPath}/resources/images/payment-icon/visa.png" alt="PaymentGateway" /></li>
+						<li class="list-inline-item"><img src="${pageContext.request.contextPath}/resources/images/payment-icon/mastercard.png" alt="PaymentGateway" /></li>
+						<li class="list-inline-item"><img src="${pageContext.request.contextPath}/resources/images/payment-icon/americanexpress.png" alt="PaymentGateway" /></li>
 					</ul>
 				<!-- Payment Gateway Links Ends -->
 				</div>
@@ -104,11 +104,13 @@
 		</footer>
 	<!-- Footer Section Ends -->
 	<!-- Template JS Files -->
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/custom.js"></script>	
+	<script src="${pageContext.request.contextPath}/resources/js/jquery-3.3.1.min.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/popper.min.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/jquery.magnific-popup.min.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/owl.carousel.min.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/custom.js"></script>	
+	<script src="${pageContext.request.contextPath}/resources/js/join.js"></script>
+	
 	</body>
 </html>
