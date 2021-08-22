@@ -8,6 +8,8 @@ import javax.servlet.http.HttpSession;
 import org.pjt.domain.UserInfo;
 import org.pjt.dto.LoginDTO;
 import org.pjt.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -18,6 +20,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("user")
 public class UserController {
 
+	public static final Logger Logger = LoggerFactory.getLogger(UserController.class);
+	
 	@Inject
 	private UserService userService;
 	
@@ -56,7 +60,12 @@ public class UserController {
 	@RequestMapping(value="/registerPost", method = RequestMethod.POST)
 	public void registerPOST(UserInfo userInfo) throws Exception {
 		
+		Logger.info("==================================");
+		Logger.info("controller create user .. "+ userInfo.toString());
+		
+		
 		userService.register(userInfo);
+		
 	}
 
 	

@@ -1,7 +1,7 @@
 
 // password 일치하는지 확인
 $(function() {
-	$(".pw").focusout(function(){
+	$("input").keyup(function(){
 		var pwd1 = $("#password").val();
 		var pwd2 = $("#Repassword").val();
 
@@ -12,15 +12,16 @@ $(function() {
 				$("#alert-success").css('display', 'inline-block');
 				$("#alert-danger").css('display', 'none');
 			}else{
-				$("#password").focus();
 				$("#alert-success").css('display', 'none');
 				$("#alert-danger").css('display', 'inline-block');
-				return false;
 			}
 		}
 	});
-	
-	$("registFrm").submit(function(){
+});
+
+
+$(function(){
+	$("#registFrm").submit(function(){
 		if($("#userId").val() == ""){
 			alert("아이디를 입력해 주세요!");
 			$("#userId").focus();

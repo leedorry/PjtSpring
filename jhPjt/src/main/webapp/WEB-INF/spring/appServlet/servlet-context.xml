@@ -23,6 +23,13 @@
 	
 	<context:component-scan base-package="org.pjt.controller" />
 	
+	<beans:bean id="loginInterceptor"
+		class="org.pjt.interceptor.LoginInterceptor"></beans:bean>
 	
-	
+	<interceptors>
+		<interceptor>
+			<mapping path="/user/LogionPost" />
+			<beans:ref bean="loginInterceptor" />
+		</interceptor>
+	</interceptors>
 </beans:beans>
